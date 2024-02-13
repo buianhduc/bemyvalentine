@@ -33,8 +33,8 @@ class Button extends React.Component<_ButtonProperties, _State>{
     className: string = "";
     constructor(props: _ButtonProperties){
         super(props);
-        this.className = this.props.isPrimary ? "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        : "bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+        this.className = this.props.isPrimary ? "bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded"
+        : "bg-transparent hover:bg-pink-500 text-pink-700 font-semibold hover:text-white py-2 px-4 border border-pink-500 hover:border-transparent rounded"
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick() {

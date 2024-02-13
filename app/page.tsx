@@ -31,8 +31,9 @@ export default function Home() {
   }
   // const router = useRouter();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between content-center p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between content-center p-20">
       <div className="container flex flex-col items-center justify-between content-center m-24">
+      <h1 className="text-3xl tracking-wide text-red-400 decoration-2 font-semibold m-12">Hi pookie, I have something to ask you :3</h1>
         <Image width={400} height={225} src="/willYouBeMyValentine.gif" alt="alt" className="p-10"/>
         <div className=" flex h-20 space-x-10 justify-items-stretch justify-evenly">
           <Link href="/success">

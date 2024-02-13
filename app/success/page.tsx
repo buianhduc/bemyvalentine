@@ -3,13 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "../ui/components/buttons/Button";
 import "../globals.css"
-import { Suspense } from "react";
-import Lottie from "lottie-react";
-import loading from "../../public/loadingAnimation.json";
 export default function Page() {
 
     return (
-        <Suspense fallback={<Lottie animationData={loading}/>}>
         <main className="flex min-h-screen flex-col items-center justify-between content-center p-24">
             <div className="container flex flex-col items-center justify-between content-center m-12">
             <Image width={400} height={225} src="/yay.gif" alt="alt" className="p-10"/>
@@ -21,6 +17,5 @@ export default function Page() {
             </div>
          </div>
         </main>
-        </Suspense>
     )
 }
