@@ -39,7 +39,13 @@ export default function Home() {
           <Link href="/success">
             <Button isPrimary={true} message="YES" onClick={() => console.log()}/>
           </Link>
-          <Button isPrimary={false} message={noMessage} onClick={() => setNoMessage(getNextMessage())}/>
+          {(currMessageNumber != messages.length - 1) ?
+            <Button isPrimary={false} message={noMessage} onClick={() => setNoMessage(getNextMessage())}/>
+            : 
+            <Link href="https://youtu.be/hvL1339luv0?si=UHf7EbVGljxcyZiv">
+                <Button isPrimary={true} message={noMessage} onClick={() => console.log()}/>
+            </Link>
+          }
         </div>
       </div>
     </main>
